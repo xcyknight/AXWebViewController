@@ -121,13 +121,13 @@ API_AVAILABLE(ios(8.0))
     NSURL *_URL;
 }
 #else
-API_AVAILABLE(ios(7.0))
-@interface AXWebViewController : UIViewController <UIWebViewDelegate>
-{
-@protected
-    UIWebView *_webView;
-    NSURL *_URL;
-}
+//API_AVAILABLE(ios(7.0))
+//@interface AXWebViewController : UIViewController <UIWebViewDelegate>
+//{
+//@protected
+//    UIWebView *_webView;
+//    NSURL *_URL;
+//}
 #endif
 /// Delegate.
 @property(assign, nonatomic) id<AXWebViewControllerDelegate>delegate;
