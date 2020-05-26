@@ -31,8 +31,8 @@
 #endif
 
 #ifndef AX_WEB_VIEW_CONTROLLER_USING_WEBKIT
-#define AX_WEB_VIEW_CONTROLLER_USING_WEBKIT __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_8_0
-// #define AX_WEB_VIEW_CONTROLLER_USING_WEBKIT 1
+// #define AX_WEB_VIEW_CONTROLLER_USING_WEBKIT __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_8_0
+#define AX_WEB_VIEW_CONTROLLER_USING_WEBKIT 1
 #endif
 
 #ifndef AX_WEB_VIEW_CONTROLLER_DEFINES_PROXY
@@ -46,8 +46,8 @@
 #endif
 
 #import <UIKit/UIKit.h>
-#import <NJKWebViewProgress/NJKWebViewProgress.h>
-#import <NJKWebViewProgress/NJKWebViewProgressView.h>
+//#import <NJKWebViewProgress/NJKWebViewProgress.h>
+//#import <NJKWebViewProgress/NJKWebViewProgressView.h>
 #if AX_WEB_VIEW_CONTROLLER_USING_WEBKIT
 #import <WebKit/WebKit.h>
 #import "AXSecurityPolicy.h"
@@ -136,7 +136,7 @@ API_AVAILABLE(ios(7.0))
 @property(readonly, nonatomic) WKWebView *webView;
 #else
 /// Web view.
-@property(readonly, nonatomic) UIWebView *webView;
+//@property(readonly, nonatomic) UIWebView *webView;
 #endif
 #if AX_WEB_VIEW_CONTROLLER_USING_WEBKIT
 /// Default is NO. Enabled to allow present alert views.
